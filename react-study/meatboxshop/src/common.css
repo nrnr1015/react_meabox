@@ -1,0 +1,51 @@
+/*회원가입 general*/ 
+.steps {position: relative;}
+.steps {margin-top: 4px;}
+.steps::before ,
+.steps:after {content:""; position: absolute; left: 0; top: -4px; width: 100%; height: 4px;}
+.steps:after {background: #e0e0e0;}
+.steps33:before {background: #e53f43; width: 33.333%; z-index: 1;}
+.steps66:before {background: #e53f43; width: 66.6666%; z-index: 1;}
+.steps20:before {background: #e53f43; width: 20%; z-index: 1;}
+.steps40:before {background: #e53f43; width: 40%; z-index: 1;}
+.steps60:before {background: #e53f43; width: 60%; z-index: 1;}
+.steps80:before {background: #e53f43; width: 80%; z-index: 1;}
+.steps100:before {background: #e53f43; width: 100%; z-index: 1;}
+
+.comm_title_area.center_if {text-align: center;}
+.comm_title_area {font-size: 30px; line-height: 30px; letter-spacing: -0.5px;}
+.comm_title_area .common_tit {font-size: 30px; color: #212121;}
+.common_tit_black {display: block; font-size: 20px; color: #757575; line-height: 36px;} 
+.comm_title_area .common_tit_red {display: block; color: #e53f43;}
+.common_sub_black {font-size: 16px; color: #212121; font-weight: 400;}
+
+.box_button .button_default:disabled {background: #ccc; opacity: 1;}
+.box_button .button_default {width: 100%; height: 48px; border-radius: 2px; font-size: 16px; font-weight: 700; letter-spacing: -0.5px;}
+.box_button.mini_btns .button_default.max_btn {width: 112px;}
+.box_button.mini_btns .button_default {width: 80px; font-size: 15px; font-weight: 400;}
+.box_button .red_style {background: #e53f43; color: #fff;}
+.box_button .border_style {border:1px solid #e53f43; color: #e53f43;}
+
+.radius_inputs {display: table; width: 188px;}
+.radius_inputs a {display: table-cell; border:1px solid #ccc; border-radius: 24px; background: #fff; width: 180px; height: 48px; font-size: 16px; color: #212121; text-align: center; vertical-align: middle;}
+
+.input_boxing {position: relative;}
+.input_boxing .phon_area.input_txt {margin-right: 120px;}
+.input_boxing .input_txt {margin-right: 88px;}
+.input_boxing .mini_btns {position: absolute; right: 0; top: 0;}
+.input_txt.error_boxing .input_bord {border: 2px solid #E53F43 !important;}
+.input_txt.error_boxing .input_bord:focus {background: none;}
+.input_txt.error_boxing .input_bord:not(:focus):valid ~ .up_label ,
+.input_txt.error_boxing .input_bord:focus ~ .up_label {color: #E53F43;}
+.input_txt .error_msg {display: block; text-indent: 10px; font-size: 12px; color: #E53F43; line-height: 20px;}
+.input_txt .sub_msg {display: block; text-indent: 10px; font-size: 12px; color: #212121; line-height: 20px;}
+.input_txt .input_bord:focus {border:2px solid #212121; transition:.2s;}
+.input_txt {position: relative; margin-bottom: 12px;}
+.input_txt .input_bord:disabled {background: #F5F7F8;}
+.input_txt.input_pd_none .input_bord {padding: 10px;}
+.input_txt .input_bord {width: 100%; height: 48px; border:1px solid #e0e0e0; border-radius: 2px; padding: 21px 10px 10px 10px; font-size: 15px;}
+.input_txt textarea.input_bord {resize: none; height: 88px;}
+.input_txt .up_label {position: absolute; left: 15px; top: 12px; transition: 0.3s ease all; color: #9E9E9E; font-size: 15px;}
+.input_txt.block .up_label {top: 4px; left: 10px; font-size: 11px;}
+.input_txt .input_bord:focus ~ .up_label,
+.input_txt .input_bord:not(:focus):valid ~ .up_label{ top: 4px; left: 10px; font-size: 11px; z-index: 1;}
